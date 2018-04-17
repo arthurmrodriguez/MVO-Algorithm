@@ -1,0 +1,92 @@
+Características del MVO
+
+Tamaño población = 60 (igual que results)
+Numero de evaluaciones de función objetivo = 10K*DIM (100K para dim 10, 300K para dim 30)
+Numero de mediciones = 25 ejecuciones por funciones
+
+DIM = 10
+
+Function : 1 Dim 10 - Function Value (Mean) -> 28571,1813
+Total evaluations -> 100004 | LS evaluations -> 28784
+Function : 2 Dim 10 - Function Value (Mean) -> 7266,0794
+Total evaluations -> 100064 | LS evaluations -> 28784
+Function : 3 Dim 10 - Function Value (Mean) -> 4,3194
+Total evaluations -> 101743 | LS evaluations -> 30583
+Function : 4 Dim 10 - Function Value (Mean) -> 28,0399
+Total evaluations -> 101803 | LS evaluations -> 30583
+Function : 5 Dim 10 - Function Value (Mean) -> 20,3363
+Total evaluations -> 101623 | LS evaluations -> 30583
+Function : 6 Dim 10 - Function Value (Mean) -> 1,9837
+Total evaluations -> 100004 | LS evaluations -> 28784
+Function : 7 Dim 10 - Function Value (Mean) -> 0,75537
+Total evaluations -> 100124 | LS evaluations -> 28784
+Function : 8 Dim 10 - Function Value (Mean) -> 22,6108
+Total evaluations -> 100244 | LS evaluations -> 28784
+Function : 9 Dim 10 - Function Value (Mean) -> 22,4288
+Total evaluations -> 101683 | LS evaluations -> 30583
+Function : 10 Dim 10 - Function Value (Mean) -> 779,1439
+Total evaluations -> 100064 | LS evaluations -> 28784
+Function : 11 Dim 10 - Function Value (Mean) -> 838,586
+Total evaluations -> 100004 | LS evaluations -> 28784
+Function : 12 Dim 10 - Function Value (Mean) -> 0,10734
+Total evaluations -> 101743 | LS evaluations -> 30583
+Function : 13 Dim 10 - Function Value (Mean) -> 0,18947
+Total evaluations -> 101803 | LS evaluations -> 30583
+Function : 14 Dim 10 - Function Value (Mean) -> 0,099588
+Total evaluations -> 100244 | LS evaluations -> 28784
+Function : 15 Dim 10 - Function Value (Mean) -> 1,2598
+Total evaluations -> 100244 | LS evaluations -> 28784
+Function : 16 Dim 10 - Function Value (Mean) -> 2,7809
+Total evaluations -> 100004 | LS evaluations -> 28784
+Function : 17 Dim 10 - Function Value (Mean) -> 1839,2743
+Total evaluations -> 100004 | LS evaluations -> 28784
+Function : 18 Dim 10 - Function Value (Mean) -> 6111,5344
+Total evaluations -> 100124 | LS evaluations -> 28784
+Function : 19 Dim 10 - Function Value (Mean) -> 2,8083
+Total evaluations -> 101683 | LS evaluations -> 30583
+Function : 20 Dim 10 - Function Value (Mean) -> 94,6664
+Total evaluations -> 100004 | LS evaluations -> 28784
+
+DIM = 30
+
+
+Function : 1 Dim 30 - Function Value (Mean) -> 2362835,3163
+Total evaluations -> 302501 | LS evaluations -> 91181
+Function : 2 Dim 30 - Function Value (Mean) -> 16050062,0017
+Total evaluations -> 302861 | LS evaluations -> 91181
+Function : 3 Dim 30 - Function Value (Mean) -> 38,2388
+Total evaluations -> 302561 | LS evaluations -> 91181
+Function : 4 Dim 30 - Function Value (Mean) -> 89,6318
+Total evaluations -> 302741 | LS evaluations -> 91181
+Function : 5 Dim 30 - Function Value (Mean) -> 20,9377
+Total evaluations -> 302441 | LS evaluations -> 91181
+Function : 6 Dim 30 - Function Value (Mean) -> 12,3328
+Total evaluations -> 302441 | LS evaluations -> 91181
+Function : 7 Dim 30 - Function Value (Mean) -> 1,151
+Total evaluations -> 302981 | LS evaluations -> 91181
+Function : 8 Dim 30 - Function Value (Mean) -> 114,2363
+Total evaluations -> 302441 | LS evaluations -> 91181
+Function : 9 Dim 30 - Function Value (Mean) -> 120,4748
+Total evaluations -> 302741 | LS evaluations -> 91181
+Function : 10 Dim 30 - Function Value (Mean) -> 3273,9177
+Total evaluations -> 302381 | LS evaluations -> 91181
+Function : 11 Dim 30 - Function Value (Mean) -> 3296,7135
+Total evaluations -> 303041 | LS evaluations -> 91181
+Function : 12 Dim 30 - Function Value (Mean) -> 1,217
+Total evaluations -> 302681 | LS evaluations -> 91181
+Function : 13 Dim 30 - Function Value (Mean) -> 0,44153
+Total evaluations -> 302621 | LS evaluations -> 91181
+Function : 14 Dim 30 - Function Value (Mean) -> 0,34108
+Total evaluations -> 302741 | LS evaluations -> 91181
+Function : 15 Dim 30 - Function Value (Mean) -> 17,1254
+Total evaluations -> 302981 | LS evaluations -> 91181
+Function : 16 Dim 30 - Function Value (Mean) -> 12,1298
+Total evaluations -> 302441 | LS evaluations -> 91181
+Function : 17 Dim 30 - Function Value (Mean) -> 65084,1055
+Total evaluations -> 302561 | LS evaluations -> 91181
+Function : 18 Dim 30 - Function Value (Mean) -> 144030,9439
+Total evaluations -> 302561 | LS evaluations -> 91181
+Function : 19 Dim 30 - Function Value (Mean) -> 11,8997
+Total evaluations -> 302741 | LS evaluations -> 91181
+Function : 20 Dim 30 - Function Value (Mean) -> 362,5848
+Total evaluations -> 302861 | LS evaluations -> 91181
