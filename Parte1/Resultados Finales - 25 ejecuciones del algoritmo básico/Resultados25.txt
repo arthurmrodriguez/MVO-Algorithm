@@ -1,0 +1,52 @@
+Características del MVO
+
+Tamaño población = 60 (igual que results)
+Numero de evaluaciones de función objetivo = 10K*DIM (100K para dim 10, 300K para dim 30)
+Numero de mediciones = 25 ejecuciones por funciones
+
+DIM = 10
+
+Function : 1 Dim 10 - Function Value (Mean) -> 154324,8798
+Function : 2 Dim 10 - Function Value (Mean) -> 4074,3159
+Function : 3 Dim 10 - Function Value (Mean) -> 14,2504
+Function : 4 Dim 10 - Function Value (Mean) -> 20,1142
+Function : 5 Dim 10 - Function Value (Mean) -> 20,0187
+Function : 6 Dim 10 - Function Value (Mean) -> 1,5494
+Function : 7 Dim 10 - Function Value (Mean) -> 0,29931
+Function : 8 Dim 10 - Function Value (Mean) -> 15,8798
+Function : 9 Dim 10 - Function Value (Mean) -> 16,5747
+Function : 10 Dim 10 - Function Value (Mean) -> 564,6339
+Function : 11 Dim 10 - Function Value (Mean) -> 635,4456
+Function : 12 Dim 10 - Function Value (Mean) -> 0,1579
+Function : 13 Dim 10 - Function Value (Mean) -> 0,16675
+Function : 14 Dim 10 - Function Value (Mean) -> 0,10123
+Function : 15 Dim 10 - Function Value (Mean) -> 1,2324
+Function : 16 Dim 10 - Function Value (Mean) -> 2,4935
+Function : 17 Dim 10 - Function Value (Mean) -> 3473,6509
+Function : 18 Dim 10 - Function Value (Mean) -> 12746,5707
+Function : 19 Dim 10 - Function Value (Mean) -> 2,3028
+Function : 20 Dim 10 - Function Value (Mean) -> 104,1478
+
+DIM = 30
+
+
+Function : 1 Dim 30 - Function Value (Mean) -> 3193458,5193
+Function : 2 Dim 30 - Function Value (Mean) -> 25194,6983
+Function : 3 Dim 30 - Function Value (Mean) -> 119,677
+Function : 4 Dim 30 - Function Value (Mean) -> 86,4214
+Function : 5 Dim 30 - Function Value (Mean) -> 20,0465
+Function : 6 Dim 30 - Function Value (Mean) -> 9,2983
+Function : 7 Dim 30 - Function Value (Mean) -> 0,062282
+Function : 8 Dim 30 - Function Value (Mean) -> 83,3485
+Function : 9 Dim 30 - Function Value (Mean) -> 95,4476
+Function : 10 Dim 30 - Function Value (Mean) -> 2822,9319
+Function : 11 Dim 30 - Function Value (Mean) -> 3071,8559
+Function : 12 Dim 30 - Function Value (Mean) -> 0,2416
+Function : 13 Dim 30 - Function Value (Mean) -> 0,40253
+Function : 14 Dim 30 - Function Value (Mean) -> 0,58158
+Function : 15 Dim 30 - Function Value (Mean) -> 6,8647
+Function : 16 Dim 30 - Function Value (Mean) -> 11,5186
+Function : 17 Dim 30 - Function Value (Mean) -> 119924,5772
+Function : 18 Dim 30 - Function Value (Mean) -> 13329,9256
+Function : 19 Dim 30 - Function Value (Mean) -> 10,5595
+Function : 20 Dim 30 - Function Value (Mean) -> 380,8311
