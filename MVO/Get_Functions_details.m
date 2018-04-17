@@ -1,6 +1,3 @@
-% Please note that these codes have been taken from:
-%http://playmedusa.com/blog/roulette-wheel-selection-algorithm-in-matlab-2/
-
 %_______________________________________________________________________________________%
 %  Multi-Verse Optimizer (MVO) source codes demo version 1.0                            %
 %                                                                                       %
@@ -22,24 +19,99 @@
 %                                                                                       %
 %_______________________________________________________________________________________%
 
-% ---------------------------------------------------------
-% Roulette Wheel Selection Algorithm. A set of weights
-% represents the probability of selection of each
-% individual in a group of choices. It returns the index
-% of the chosen individual.
-% Usage example:
-% fortune_wheel ([1 5 3 15 8 1])
-%    most probable result is 4 (weights 15)
-% ---------------------------------------------------------
+% This function containts full information and implementations of the benchmark 
+% functions in Table 1, Table 2, and other test functins from the literature 
 
-function choice = RouletteWheelSelection(weights)
-  accumulation = cumsum(weights);
-  p = rand() * accumulation(end);
-  chosen_index = -1;
-  for index = 1 : length(accumulation)
-    if (accumulation(index) > p)
-      chosen_index = index;
-      break;
-    end
-  end
-  choice = chosen_index;
+% lb is the lower bound: lb=[lb_1,lb_2,...,lb_d]
+% up is the uppper bound: ub=[ub_1,ub_2,...,ub_d]
+% dim is the number of variables (dimension of the problem)
+
+function [lb,ub] = Get_Functions_details(F)
+
+
+switch F
+    case 1
+        lb=-100;
+        ub=100;
+        
+    case 2
+        lb=-100;
+        ub=100;
+        
+    case 3
+        lb=-100;
+        ub=100;
+   
+    case 4
+        lb=-100;
+        ub=100;
+        
+        
+    case 5
+        lb=-100;
+        ub=100;
+        
+    case 6
+        lb=-100;
+        ub=100;
+        
+    case 7
+        lb=-inf;
+        ub=inf;
+        
+    case 8
+        lb=-32;
+        ub=32;
+        
+    case 9
+        lb=-5;
+        ub=5;
+        
+    case 10
+        lb=-5;
+        ub=5;
+        
+    case 11
+        lb=-0.5;
+        ub=0.5;
+   
+    case 12
+        lb=-100;
+        ub=100;
+        
+        
+    case 13
+        lb=-3;
+        ub=1;
+        
+    case 14
+        lb=-100;
+        ub=100;
+        
+    case 15
+        lb=-5;
+        ub=5;
+        
+    case 16
+        lb=-5;
+        ub=5;
+        
+        
+    case 17
+        lb=-5;
+        ub=5;
+        
+    case 18
+        lb=-5;
+        ub=5;
+        
+    case 19
+        lb=-5;
+        ub=5;
+        
+    case 20
+        lb=-5;
+        ub=5;
+end
+
+end

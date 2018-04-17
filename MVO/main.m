@@ -19,24 +19,46 @@
 %                                                                                       %
 %_______________________________________________________________________________________%
 
-% This function creates the first random population
+% You can simply define your cost in a seperate file and load its handle to fobj 
+% The initial parameters that you need are:
+%__________________________________________
+% fobj = @YourCostFunction
+% dim = number of your variables
+% Max_iteration = maximum number of generations
+% SearchAgents_no = number of search agents
+% lb=[lb1,lb2,...,lbn] where lbn is the lower bound of variable n
+% ub=[ub1,ub2,...,ubn] where ubn is the upper bound of variable n
+% If all the variables have equal lower bound you can just
+% define lb and ub as two single number numbers
 
-function X=initialization(SearchAgents_no,dim,ub,lb)
+% To run MVO: [Best_score,Best_pos,cg_curve]=MVO(Universes_no,Max_iteration,lb,ub,dim,fobj)
+%__________________________________________
 
-Boundary_no= size(ub,2); % numnber of boundaries
+clear all 
+clc
 
-% If the boundaries of all variables are equal and user enter a signle
-% number for both ub and lb
-if Boundary_no==1
-    X=rand(SearchAgents_no,dim).*(ub-lb)+lb;
+Universes_no=50; %Number of search agents (universes)
+FunctionNumbers = 1:7;
+
+%Problem dimension
+Problem_Dim = [10,30];
+Max_iteration=500; %Maximum numbef of iterations
+
+for f_index=1:length(FunctionNumbers)
+    
+  %Load details of the selected benchmark function
+  [lb,ub]=Get_Functions_details(FunctionNumbers(f_index));
+  
+  %Execution of the algorithm
+  [Best_score,Best_pos,cg_curve]=MVO(Universes_no,Max_iteration,lb,ub,Problem_Dim(1,1),FunctionNumbers(f_index));
+
+  %Results display
+  display(['Function : ',num2str(FunctionNumbers), ' Dim ',num2str(Problem_Dim(1,1)), ' - Function Value -> ', num2str(Best_score)]);
+  
 end
 
-% If each variable has a different lb and ub
-if Boundary_no>1
-    for i=1:dim
-        ub_i=ub(i);
-        lb_i=lb(i);
-        % X(Columnas, filas)
-        X(:,i)=rand(SearchAgents_no,1).*(ub_i-lb_i)+lb_i;
-    end
-end
+
+        
+
+
+

@@ -31,10 +31,10 @@
 % If all the variables have equal lower bound you can just
 % define lb and ub as two single number numbers
 
-% To run MVO: [Best_score,Best_pos,cg_curve]=MVO(Universes_no,Max_iteration,lb,ub,dim,fobj)
+% To run MVO: [Best_score,Best_pos,cg_curve]=MVO(Universes_no,Max_iteration,lb,ub,dim,functionNumber)
 %__________________________________________
 
-function [Best_universe_Inflation_rate,Best_universe,Convergence_curve]=MVO(N,Max_time,lb,ub,dim,fobj)
+function [Best_universe_Inflation_rate,Best_universe,Convergence_curve]=MVO(N,Max_time,lb,ub,dim,functionNumber)
 
 %Two variables for saving the position and inflation rate (fitness) of the best universe
 Best_universe=zeros(1,dim);
@@ -74,7 +74,7 @@ while Time<Max_time+1
         Universes(i,:)=(Universes(i,:).*(~(Flag4ub+Flag4lb)))+ub.*Flag4ub+lb.*Flag4lb;
         
         %Calculate the inflation rate (fitness) of universes
-        Inflation_rates(1,i)=fobj(Universes(i,:));
+        Inflation_rates(1,i)=benchmark_func(Universes(i,:),functionNumber);
         
         %Elitism
         if Inflation_rates(1,i)<Best_universe_Inflation_rate
@@ -84,19 +84,22 @@ while Time<Max_time+1
         
     end
     
+    %Sort by inflation rates in ascendant order
     [sorted_Inflation_rates,sorted_indexes]=sort(Inflation_rates);
     
+    %Creates the matrix of sorted universes by its inflation rate
     for newindex=1:N
         Sorted_universes(newindex,:)=Universes(sorted_indexes(newindex),:);
     end
     
-    %Normaized inflation rates (NI in Eq. (3.1) in the paper)
+    %Normalized inflation rates (NI in Eq. (3.1) in the paper)
     normalized_sorted_Inflation_rates=normr(sorted_Inflation_rates);
     
     Universes(1,:)= Sorted_universes(1,:);
     
-    %Update the Position of universes
-    for i=2:size(Universes,1)%Starting from 2 since the firt one is the elite
+    %Update the Position of universes: exchanging objects through WormH,
+    %BHs and WHs
+    for i=2:size(Universes,1)%Starting from 2 since the first one is the elite
         Back_hole_index=i;
         for j=1:size(Universes,2)
             r1=rand();
@@ -145,9 +148,9 @@ while Time<Max_time+1
     Convergence_curve(Time)=Best_universe_Inflation_rate;
     
     %Print the best universe details after every 50 iterations
-    if mod(Time,50)==0
-        display(['At iteration ', num2str(Time), ' the best universes fitness is ', num2str(Best_universe_Inflation_rate)]);
-    end
+    %if mod(Time,50)==0
+    %    display(['At iteration ', num2str(Time), ' the best universes fitness is ', num2str(Best_universe_Inflation_rate)]);
+    %end
     Time=Time+1;
 end
 
