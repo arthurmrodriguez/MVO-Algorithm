@@ -3,7 +3,7 @@ Estudio sobre una metaheurística llamada Multi-verse Optimizer, donde se estudi
 
 ## Parte 1 - Estudio de la metaheurística en bruto y comparación con DE
 
-La primera parte constará del **análisis en bruto de la metaheurística**, la explicación del algoritmo básico y en base a qué fenónemo o comportamiento esta inspirado, realizando finalmente una comparación con distintos modelos de **Differential Evo lution** proporcionados en distintos ficheros, todo esto en términos de un conjunto de funciones benchmark propuestas por el profesor.
+La primera parte constará del **análisis en bruto de la metaheurística**, la explicación del algoritmo básico y en base a qué fenónemo o comportamiento esta inspirado, realizando finalmente una comparación con distintos modelos de **Differential Evolution** proporcionados en distintos ficheros, todo esto en términos de un conjunto de funciones benchmark propuestas por el profesor.
 
 ## Parte 2 - Mejora del algoritmo: Hibridación en Algoritmo Memético a través de una LS
 
@@ -15,4 +15,4 @@ Para la tercera y última parte del estudio se buscaba proponer distintas mejora
 
 El estudio completo de esta metaheurística se concreta en detalle en la **Memoria de trabajo** que se proporciona en este repositorio. 
 
-Autores originales de la metaheurstica: Seyedali Mirjalili, Seyed Mihammad Mirjalili & Abdolreza Hatamlou.
+Publicació original: S. Mirjalili, S. M. Mirjalili, A. Hatamlou, " Multi-Verse Optimizer: a nature-inspired algorithm for global optimization " , Neural Computing and Applications, in press, 2015, DOI: http://dx.doi.org/10.1007/s00521-015-1870-7
